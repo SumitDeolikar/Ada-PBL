@@ -10,6 +10,13 @@ bool isSafe(int i, int j, int row, int col, int arr[][4],
 void solveMaze(int arr[][4], int row,int col, int i, int j,
 vector<vector<bool> > &visited, vector<string>& path, string output  ) {
 
+ //base case
+  if(i == row-1 && j == col-1) {
+    //answer found
+    path.push_back(output);
+    return;
+  }
+
   
 
 
