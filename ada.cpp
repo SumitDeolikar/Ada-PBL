@@ -30,6 +30,15 @@ vector<vector<bool> > &visited, vector<string>& path, string output  ) {
     solveMaze(arr, row, col, i, j-1, visited, path, output + 'L');
     //backtrack 
     visited[i][j-1] = false;
+   }
+
+  //Right -> i, j+1
+  if(isSafe(i, j+1, row, col, arr, visited)) {
+    visited[i][j+1] = true;
+    solveMaze(arr, row, col, i, j+1, visited, path, output + 'R');
+    //backtrack 
+    visited[i][j+1] = false;
+  }
   
 
 
