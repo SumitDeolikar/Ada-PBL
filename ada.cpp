@@ -1,7 +1,7 @@
 #include <iostream>
 #include<vector>
 using namespace std;
-
+//shfbdjcj
 bool isSafe(int i, int j, int row, int col, int arr[][4],
  vector<vector<bool> > &visited) {
  if( ((i>=0 && i < row) && (j >= 0 && j< col)) &&
